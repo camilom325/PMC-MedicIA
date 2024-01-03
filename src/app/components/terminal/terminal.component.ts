@@ -1,16 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-terminal',
+  selector: 'terminal-component',
   templateUrl: './terminal.component.html',
   styleUrls: ['./terminal.component.css']
 })
 export class TerminalComponent implements OnInit {
-selection: any;
 
-  constructor() { }
+  @Input() text!: string;
 
-  ngOnInit() {
+  ngOnInit(): void {
+    const typewriter: HTMLElement | null = document.querySelector('.typewriter')!;
+    this.textTypingEffect(this.text, typewriter);
+  }
+
+  textTypingEffect(text: string, element: HTMLElement, i = 0):void {
+    element.textContent += text[i];
+
+    if (i === text.length - 1) {
+      return;
+    }
+
+    setTimeout(() => { this.textTypingEffect(text, element, i + 1) }, 30);
+
   }
 
 }
