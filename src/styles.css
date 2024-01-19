@@ -56,3 +56,11 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #4caf50 #fefcfb;
 }
+
+hr {
+  margin-inline: 2.5%;
+  margin-block-start: 0.5%;
+  width: 95%;
+  height: 1px;
+  background-color: rgb(15, 15, 16);
+}

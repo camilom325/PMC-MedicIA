@@ -1,25 +1,81 @@
 <div class="fullPages" (scroll)="onScroll()">
   <section id="section-1" class="section section-1">
     <div [ngClass]="{'animate__animated animate__fadeInUp animate__delay-1s': currentSection === 1, 'hide' : currentSection !== 1}">
-      <h1>The 1 section</h1>
+      
+      <div class="projects-container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <h2><strong><a>Micro Projects</a></strong></h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row project-content px-2">
+          <!-- <div class="col-md-6 px-5 py-3"></div>
+          <div class="col-md-6 px-5 py-3"></div> -->
+          <app-onProcess></app-onProcess>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section id="section-2" class="section section-2">
     <div [ngClass]="{'animate__animated animate__fadeInUp animate__delay-1s': currentSection === 2 , 'hide' : currentSection !== 2}">
-      <h1>The 2 section</h1>
+      
+      <div class="projects-container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <h2><strong><a>SQL - CRUD app</a></strong></h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row project-content px-2">
+          <!-- <div class="col-md-6 px-5 py-3"></div>
+                <div class="col-md-6 px-5 py-3"></div> -->
+          <app-onProcess></app-onProcess>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section id="section-3" class="section section-3">
     <div [ngClass]="{'animate__animated animate__fadeInUp animate__delay-1s': currentSection === 3, 'hide' : currentSection !== 3}">
-      <h1>The 3 section</h1>
+      
+      <div class="projects-container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <h2><strong><a>JWT authentication</a></strong></h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row project-content px-2">
+          <!-- <div class="col-md-6 px-5 py-3"></div>
+                <div class="col-md-6 px-5 py-3"></div> -->
+          <app-onProcess></app-onProcess>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section id="section-4" class="section section-4">
     <div [ngClass]="{'animate__animated animate__fadeInUp animate__delay-1s': currentSection === 4, 'hide' : currentSection !== 4}">
-      <h1>The 4 section</h1>
+      
+      <div class="projects-container">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <h2><strong><a>Spotify API usage</a></strong></h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row project-content px-2">
+          <!-- <div class="col-md-6 px-5 py-3"></div>
+                <div class="col-md-6 px-5 py-3"></div> -->
+          <app-onProcess></app-onProcess>
+        </div>
+      </div>
+
     </div>
   </section>
 

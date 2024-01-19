@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { FooterComponent } from './footer/footer.component';
+import { OnProcessComponent } from './onProcess/onProcess.component';
 
 @NgModule({
   imports: [
@@ -11,12 +12,14 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     NavbarComponent,
     TerminalComponent,
-    FooterComponent
+    FooterComponent,
+    OnProcessComponent
   ],
   exports: [
     NavbarComponent,
     TerminalComponent,
-    FooterComponent
+    FooterComponent,
+    OnProcessComponent
   ]
 })
 export class ComponentsModule { }

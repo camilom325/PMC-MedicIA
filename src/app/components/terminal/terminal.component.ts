@@ -10,7 +10,7 @@ export class TerminalComponent implements OnInit {
   @Input() text!: string;
 
   ngOnInit(): void {
-    const typewriter: HTMLElement | null = document.querySelector('.typewriter')!;
+    const typewriter: HTMLElement = document.querySelector('.typewriter')!;
     this.textTypingEffect(this.text, typewriter);
   }
 

@@ -1,0 +1,52 @@
+.construction-container {
+  text-align: center;
+}
+
+.construction-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  text-align: center;
+}
+
+.construction-icon em {
+  font-size: 80px;
+}
+
+.construction-icon::before,
+.construction-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.construction-icon::before {
+  width: 20px;
+  height: 100%;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.construction-icon::after {
+  height: 20px;
+  width: 100%;
+  top: 50%;
+  margin-top: -10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0;
+}

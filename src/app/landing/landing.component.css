@@ -19,13 +19,6 @@ p {
   margin: 0;
 }
 
-hr {
-  margin-inline: 2.5%;
-  width: 95%;
-  height: 1px;
-  background-color: rgb(15, 15, 16);
-}
-
 .spacer {
   flex: 1;
 }
@@ -163,6 +156,23 @@ video {
   background-color: #fefcfb;
   box-shadow: 0px 0px 10px rgba(10, 17, 40, 0.5);
   border-radius: 5px;
+}
+
+.project {
+  transition: ease-in-out 0.5s;
+}
+
+.project:hover {
+  translate: 0 -3px;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.blue-txt {
+  color: #1976d2;
+}
+
+a {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 280px), (max-height: 280px) {

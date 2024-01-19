@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { ProjectsService } from './projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -11,18 +12,22 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   currentSection!: number;
   fullPagesDiv!: HTMLElement;
   totalHeight!: number;
+  focusSection: string | undefined;
 
+  constructor(private elementRef: ElementRef, private service: ProjectsService) { }
+  
   ngOnInit() {
     this.currentSection = 1;
     this.fullPagesDiv = this.elementRef.nativeElement.querySelector('.fullPages');
     this.totalHeight = this.fullPagesDiv.scrollHeight - this.fullPagesDiv.clientHeight;
+    this.service.currentNumber.subscribe(number => {
+      this.scrollToSection(number);
+    });
   }
 
   ngAfterViewInit() {
     this.elementRef.nativeElement.focus();
   }
-
-  constructor(private elementRef: ElementRef) { }
 
  @HostListener('scroll', ['$event'])
  onScroll() {

@@ -4,8 +4,8 @@
 
   <div class="video-container">
     <video class="video-background" autoplay muted loop playsinline >
-      <track kind="subtitles" src="subtitles.vtt" srclang="en" label="English">
-      <track kind="description" src="description.vtt" srclang="en" label="English">
+      <track kind="subtitles" srclang="en" label="English">
+      <track kind="description" srclang="en" label="English">
       <source src="../../assets/images/banner-init.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -127,24 +127,24 @@
   <div class="skills-container" data-aos="fade-right" data-aos-duration="1000">
     <div class="row">
       <div class="col d-flex justify-content-center align-items-center">
-        <h2><strong>Projects</strong></h2>
+        <h2 (click)="navigateTo('/projects')"><strong><a>Projects</a></strong></h2>
       </div>
     </div>
     <hr>
     <div class="row">
       <div class="col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-        <h2><strong>Projects</strong></h2>
+        <h3 class="project" (click)="navigateTo('/projects', 1)" ><a>Micro-projects</a></h3>
       </div>
       <div class="col-md-8 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-        <h2><strong>Projects</strong></h2>
+        <h3 class="project" (click)="navigateTo('/projects', 2)" ><a>SQL - CRUD app</a></h3>
       </div>
     </div>
     <div class="row px-5">
       <div class="col-md-8 d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-        <h2><strong>Projects</strong></h2>
+        <h3 class="project blue-txt" (click)="navigateTo('/projects', 3)" ><a>JWT authentication</a></h3>
       </div>
       <div class="col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-        <h2><strong>Projects</strong></h2>
+        <h3 class="project blue-txt" (click)="navigateTo('/projects', 4)" ><a>Spotify API usage</a></h3>
       </div>
     </div>
   </div>

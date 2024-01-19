@@ -67,3 +67,42 @@
 .animate__delay-1s {
   --animate-delay: 0.2s;
 }
+
+.projects-container {
+  width: 80vw;
+  height: 55vh;
+  background-color: #fefcfb;
+  box-shadow: 0px 0px 10px rgba(10, 17, 40, 0.5);
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.projects-container h2 {
+  padding-bottom: 0;
+}
+
+.projects-container::-webkit-scrollbar {
+  width: 3px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background-color: rgba(10, 17, 40, 0.8);
+  border-radius: 6px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background-color: #fefcfb;
+}
+
+.projects-container {
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #fefcfb;
+}
+
+.project-content {
+  height: calc(100% - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

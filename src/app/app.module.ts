@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingModule } from './landing/landing.module';
 import { ComponentsModule } from './components/components.module';
 import { ProjectsModule } from './projects/projects.module';
+import { MicroProjectsModule } from './micro-projects/micro-projects.module';
 
 @NgModule({
   declarations: [	
@@ -16,7 +17,8 @@ import { ProjectsModule } from './projects/projects.module';
     AppRoutingModule,
     ComponentsModule,
     LandingModule,
-    ProjectsModule
+    ProjectsModule,
+    MicroProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
