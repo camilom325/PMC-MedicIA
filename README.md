@@ -1,4 +1,4 @@
-# MyPortafolio
+# MyPortfolio
 
 Welcome to the GitHub repository for my Portfolio Website!
 
@@ -8,11 +8,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to Use
 
-1. Clone the repository: `git clone https://github.com/camilom325/my-portafolio.git`
+1. Clone the repository: `git clone https://github.com/camilom325/my-portfolio.git`
 
 2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Or open this github pages [URL](https://github.com/camilom325/my-portafolio.git).
+Or open this github pages [URL](https://github.com/camilom325/my-portfolio.git).
 
 ## Technologies Used
 
