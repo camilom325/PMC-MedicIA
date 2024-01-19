@@ -1,0 +1,69 @@
+.section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.fullPages {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  background-color: rgba(10, 17, 40, 0.1);
+}
+
+.fullPages::-webkit-scrollbar {
+  width: 0;
+}
+
+.fullPages {
+  scrollbar-width: 0;
+}
+
+.scroll-indicators {
+  position: fixed;
+  top: 50%;
+  right: 2vw;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-indicator {
+  user-select: none;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.scroll-indicator.active {
+  transform: scale(1.7);
+  opacity: 1;
+}
+
+.scroll-indicator:hover {
+  transform: scale(1.7);
+}
+
+.hide {
+  display: none;
+}
+
+.animate__delay-1s {
+  --animate-delay: 0.2s;
+}

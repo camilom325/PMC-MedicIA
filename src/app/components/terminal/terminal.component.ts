@@ -15,7 +15,7 @@ export class TerminalComponent implements OnInit {
   }
 
   textTypingEffect(text: string, element: HTMLElement, i = 0):void {
-    element.textContent += text[i];
+    element.innerHTML += text[i];
 
     if (i === text.length - 1) {
       return;
