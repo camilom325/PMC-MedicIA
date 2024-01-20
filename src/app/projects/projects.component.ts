@@ -63,4 +63,8 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     }
   }
 
+   navigateTo(url: string): void {
+    window.open(url, '_blank');
+  }
+
 }

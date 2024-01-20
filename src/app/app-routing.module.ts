@@ -9,6 +9,9 @@ const routes: Routes = [
   { path: '', component: LandingComponent },
   {
     path: 'projects', component: ProjectsComponent,
+  },
+  {
+    path: 'projects',
     children: [
       { path: 'micro-projects', component: MicroProjectsComponent },
       { path: 'crud-app', component: OnProcessComponent },

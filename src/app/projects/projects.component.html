@@ -12,7 +12,7 @@
         <div class="row project-content px-2">
           <!-- <div class="col-md-6 px-5 py-3"></div>
           <div class="col-md-6 px-5 py-3"></div> -->
-          <app-onProcess></app-onProcess>
+          <app-onProcess [embedded]="true"></app-onProcess>
         </div>
       </div>
 
@@ -32,7 +32,7 @@
         <div class="row project-content px-2">
           <!-- <div class="col-md-6 px-5 py-3"></div>
                 <div class="col-md-6 px-5 py-3"></div> -->
-          <app-onProcess></app-onProcess>
+          <app-onProcess [embedded]="true"></app-onProcess>
         </div>
       </div>
 
@@ -50,9 +50,38 @@
         </div>
         <hr>
         <div class="row project-content px-2">
-          <!-- <div class="col-md-6 px-5 py-3"></div>
-                <div class="col-md-6 px-5 py-3"></div> -->
-          <app-onProcess></app-onProcess>
+          <div class="col-md-5 px-5 py-3 img-container">
+            <img src="../../assets/images/PostmanSS.png" alt="postman ScreenShot" class="img-fluid" draggable="false">
+            <div class=" p-3">
+            </div>
+          </div>
+          <div class="col-md-7 px-5 py-3">
+            <h3>Description</h3>
+            <p>Developed a secure Spring Boot application implementing JWT authentication and leveraging MongoDB for user data storage.
+            This project showcases essential features such as user registration, login, and token-based access control to protected
+            resources. Ideal for understanding modern Java application security practices!</p>
+            <h3>Tech used</h3>
+            <div class="col d-flex align-items-center justify-content-center p-1 flex-wrap">
+              <div class="skill darkblue">
+                <h4><em class="fa-solid fa-leaf"></em></h4>
+                <p>SpringBoot</p>
+              </div>
+              <div class="skill darkblue">
+                <h4><em class="fa-brands fa-java"></em></h4>
+                <p>Java</p>
+              </div>
+              <div class="skill darkblue">
+                <h4><em class="fa-solid fa-server"></em></h4>
+                <p>MongoDB</p>
+              </div>
+
+            </div>
+            <div class="col d-flex align-items-center justify-content-center p-1 flex-wrap">
+              <button routerLink="jwt-auth">Go to project page <em class="fa-solid fa-hammer"></em></button> 
+              &nbsp;&nbsp;&nbsp; or &nbsp;&nbsp;&nbsp;
+              <button (click)="navigateTo('https://github.com/camilom325/JWT-authentication.git')" >Go to Github repo <em class="fa-brands fa-github"></em></button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -72,7 +101,7 @@
         <div class="row project-content px-2">
           <!-- <div class="col-md-6 px-5 py-3"></div>
                 <div class="col-md-6 px-5 py-3"></div> -->
-          <app-onProcess></app-onProcess>
+          <app-onProcess [embedded]="true"></app-onProcess>
         </div>
       </div>
 
