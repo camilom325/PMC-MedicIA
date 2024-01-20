@@ -1,0 +1,31 @@
+.banner {
+  background-image: url("../../assets/images/banner-pexels-miriam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 103vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+}
+
+.banner-title {
+  color: whitesmoke;
+  font-size: 6rem;
+  font-family: Poppins-semibold, sans-serif;
+}
+
+@media screen and (max-width: 600px), (max-height: 600px) {
+  .banner-title {
+    font-size: xx-large;
+  }
+}
+
+.mp-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+}

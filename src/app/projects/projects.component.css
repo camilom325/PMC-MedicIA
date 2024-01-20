@@ -119,6 +119,8 @@ h3 {
 
 .img-container {
   background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(10, 17, 40);
 }
 
 .img-container img {

@@ -54,7 +54,7 @@ body::-webkit-scrollbar-track {
 
 body {
   scrollbar-width: thin;
-  scrollbar-color: #4caf50 #fefcfb;
+  scrollbar-color: rgba(10, 17, 40, 0.9) #fefcfb;
 }
 
 hr {

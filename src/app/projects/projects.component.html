@@ -10,9 +10,23 @@
         </div>
         <hr>
         <div class="row project-content px-2">
-          <!-- <div class="col-md-6 px-5 py-3"></div>
-          <div class="col-md-6 px-5 py-3"></div> -->
-          <app-onProcess [embedded]="true"></app-onProcess>
+          <div class="col-md-5 px-5 py-3 img-container">
+            <img src="../../assets/images/micro-banner.png" alt="postman ScreenShot" class="img-fluid" draggable="false">
+          </div>
+          <div class="col-md-7 px-5 py-3">
+            <h3>Description</h3>
+            <p>Explore a thoughtfully curated repository collection featuring concise yet impactful projects that showcase adept skills
+            in TypeScript, JavaScript, React, Angular, Java, and Spring. From the precise application of TypeScript's features to
+            the development of robust Angular applications and the reliability demonstrated in Java projects, this repository
+            compilation reflects a comprehensive mastery spanning both frontend and backend technologies. The incorporation of
+            Spring Framework further underscores expertise in crafting sophisticated enterprise-level solutions. Each repository
+            serves as a testament to the developer's unwavering dedication to excellence, offering a formal and insightful
+            representation of their proficiency in the dynamic realm of contemporary web development technologies.</p>
+            <div class="col d-flex align-items-center justify-content-center p-1 flex-wrap">
+              <button routerLink="micro-projects">Go to project page&nbsp; <em class="fa-solid fa-hammer"></em></button>
+
+            </div>
+          </div>
         </div>
       </div>
 
@@ -52,8 +66,6 @@
         <div class="row project-content px-2">
           <div class="col-md-5 px-5 py-3 img-container">
             <img src="../../assets/images/PostmanSS.png" alt="postman ScreenShot" class="img-fluid" draggable="false">
-            <div class=" p-3">
-            </div>
           </div>
           <div class="col-md-7 px-5 py-3">
             <h3>Description</h3>
@@ -77,9 +89,9 @@
 
             </div>
             <div class="col d-flex align-items-center justify-content-center p-1 flex-wrap">
-              <button routerLink="jwt-auth">Go to project page <em class="fa-solid fa-hammer"></em></button> 
+              <button routerLink="jwt-auth">Go to project page&nbsp; <em class="fa-solid fa-hammer"></em></button> 
               &nbsp;&nbsp;&nbsp; or &nbsp;&nbsp;&nbsp;
-              <button (click)="navigateTo('https://github.com/camilom325/JWT-authentication.git')" >Go to Github repo <em class="fa-brands fa-github"></em></button>
+              <button (click)="navigateTo('https://github.com/camilom325/JWT-authentication.git')" >Go to Github repo&nbsp; <em class="fa-brands fa-github"></em></button>
             </div>
           </div>
         </div>
