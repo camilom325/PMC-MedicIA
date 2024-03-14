@@ -8,10 +8,34 @@ import { MicroProjectsComponent } from './micro-projects/micro-projects.componen
 const routes: Routes = [
   { path: '', component: LandingComponent },
   {
-    path: 'projects', component: ProjectsComponent,
+    path: 'educacion', component: ProjectsComponent,
   },
   {
-    path: 'projects',
+    path: 'radiologia', component: OnProcessComponent
+  },
+  {
+    path: 'dermatologia', component: OnProcessComponent
+  },
+  {
+    path: 'cardiologia', component: OnProcessComponent
+  },
+  {
+    path: 'ortopedia', component: OnProcessComponent
+  },
+  {
+    path: 'oncologia', component: OnProcessComponent
+  },
+  {
+    path: 'neurologia', component: OnProcessComponent
+  },
+  {
+    path: 'oftalmologia', component: OnProcessComponent
+  },
+  {
+    path: 'gastroenterologia', component: OnProcessComponent
+  },
+  {
+    path: 'educacion',
     children: [
       { path: 'micro-projects', component: MicroProjectsComponent },
       { path: 'crud-app', component: OnProcessComponent },

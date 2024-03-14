@@ -25,7 +25,7 @@ p {
 
 .content {
   display: flex;
-  margin: 82px auto 32px;
+  margin: 30px auto 32px;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
@@ -34,9 +34,10 @@ p {
 
 .banner {
   width: 100vw;
-  height: 104vh;
+  height: 50vh;
   position: relative;
   color: #fefcfb;
+  overflow: hidden;
 }
 
 .video-container {

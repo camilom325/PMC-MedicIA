@@ -8,11 +8,16 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
 
+  mostrar: boolean = false;
 
   constructor(private router: Router) { }
   
   navigateTo(route: string) {
     this.router.navigate([`${route}`]);
+  }
+
+  mostrarDiv() {
+    this.mostrar = !this.mostrar;
   }
 
 }
