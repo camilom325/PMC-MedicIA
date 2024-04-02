@@ -28,3 +28,10 @@
 a:hover {
   cursor: pointer;
 }
+
+.my-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 17, 40, 0.9);
+}

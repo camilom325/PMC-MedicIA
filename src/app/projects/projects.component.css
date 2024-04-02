@@ -107,7 +107,7 @@ h3 {
 
 .projects-container {
   scrollbar-width: thin;
-  scrollbar-color: #4caf50 #fefcfb;
+  scrollbar-color: rgb(0, 0, 31) #fefcfb;
 }
 
 .project-content {
