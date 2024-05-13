@@ -40,12 +40,16 @@ p {
   overflow: hidden;
 }
 
+.h2-banner {
+  font-weight: bolder;
+}
+
 @media screen and (max-width: 480px) {
   .banner {
     height: 100vh;
   }
-  .banner h2 {
-    font-size: 1;
+  .h2-banner {
+    font-size: 80rem;
   }
   .video-container img {
     height: 120vh;

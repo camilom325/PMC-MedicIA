@@ -35,3 +35,14 @@ a:hover {
   align-items: center;
   background-color: rgba(10, 17, 40, 0.9);
 }
+
+.demo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a4b75;
+  border-radius: 100px;
+  color: white;
+  border: 5px;
+  font-weight: bold;
+}

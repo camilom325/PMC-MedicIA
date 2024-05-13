@@ -9,7 +9,7 @@ import { ProjectsModule } from './projects/projects.module';
 import { MicroProjectsModule } from './micro-projects/micro-projects.module';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent
    ],
   imports: [
@@ -18,7 +18,7 @@ import { MicroProjectsModule } from './micro-projects/micro-projects.module';
     ComponentsModule,
     LandingModule,
     ProjectsModule,
-    MicroProjectsModule
+    MicroProjectsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

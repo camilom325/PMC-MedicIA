@@ -14,6 +14,7 @@ export class NavbarComponent {
   
   navigateTo(route: string) {
     this.router.navigate([`${route}`]);
+    this.mostrar = !this.mostrar;
   }
 
   mostrarDiv() {

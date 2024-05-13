@@ -4,6 +4,8 @@ import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { OnProcessComponent } from './components/onProcess/onProcess.component';
 import { MicroProjectsComponent } from './micro-projects/micro-projects.component';
+import { RadiologiaComponent } from './components/Radiologia/Radiologia.component';
+import { OncologiaComponent } from './components/Oncologia/Oncologia.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -11,7 +13,7 @@ const routes: Routes = [
     path: 'educacion', component: ProjectsComponent,
   },
   {
-    path: 'radiologia', component: OnProcessComponent
+    path: 'radiologia', component: RadiologiaComponent
   },
   {
     path: 'dermatologia', component: OnProcessComponent
@@ -23,7 +25,7 @@ const routes: Routes = [
     path: 'ortopedia', component: OnProcessComponent
   },
   {
-    path: 'oncologia', component: OnProcessComponent
+    path: 'oncologia', component: OncologiaComponent
   },
   {
     path: 'neurologia', component: OnProcessComponent

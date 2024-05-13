@@ -207,6 +207,10 @@ a {
   }
 }
 
+.h2-banner {
+  font-weight: bolder;
+}
+
 .demo-div {
   display: flex;
   justify-content: center;
