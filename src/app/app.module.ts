@@ -7,6 +7,7 @@ import { LandingModule } from './landing/landing.module';
 import { ComponentsModule } from './components/components.module';
 import { ProjectsModule } from './projects/projects.module';
 import { MicroProjectsModule } from './micro-projects/micro-projects.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [		
@@ -19,6 +20,7 @@ import { MicroProjectsModule } from './micro-projects/micro-projects.module';
     LandingModule,
     ProjectsModule,
     MicroProjectsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

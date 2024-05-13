@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { OnProcessComponent } from './onProcess/onProcess.component';
 import { RadiologiaComponent } from './Radiologia/Radiologia.component';
 import { OncologiaComponent } from './Oncologia/Oncologia.component';
+import { AssistantComponent } from './assistant/assistant.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { OncologiaComponent } from './Oncologia/Oncologia.component';
     FooterComponent,
     OnProcessComponent,
     RadiologiaComponent,
-    OncologiaComponent
+    OncologiaComponent,
+    AssistantComponent
   ],
   exports: [
     NavbarComponent,
@@ -25,7 +27,8 @@ import { OncologiaComponent } from './Oncologia/Oncologia.component';
     FooterComponent,
     OnProcessComponent,
     RadiologiaComponent,
-    OncologiaComponent
+    OncologiaComponent,
+    AssistantComponent
   ]
 })
 export class ComponentsModule { }
