@@ -13,4 +13,5 @@ export class AppComponent implements OnInit {
     window.addEventListener('load', AOS.refresh);
   }
 
+
 }

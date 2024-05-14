@@ -7,10 +7,12 @@ import { OnProcessComponent } from './onProcess/onProcess.component';
 import { RadiologiaComponent } from './Radiologia/Radiologia.component';
 import { OncologiaComponent } from './Oncologia/Oncologia.component';
 import { AssistantComponent } from './assistant/assistant.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   declarations: [
     NavbarComponent,
