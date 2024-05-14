@@ -196,6 +196,8 @@ video {
 
 a {
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(10, 17, 40);
 }
 
 @media screen and (max-width: 280px), (max-height: 280px) {
